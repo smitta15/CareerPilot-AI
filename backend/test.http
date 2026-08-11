@@ -1,0 +1,20 @@
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "user_query": "Find backend internships"
+}
+
+###
+
+GET http://localhost:8000/applications
+
+###
+
+POST http://localhost:8000/analyze-job
+Content-Type: application/json
+
+{
+  "thread_id": "test-thread-123",
+  "job_index": 0
+}
